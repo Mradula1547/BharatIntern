@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Netflix Clone</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+
+        <div class="nav" id="nav">
+            <img src="netflix.png" alt="" class="net_logo" />
+            <img src="netAvtar.png" alt="" class="net_avtar">
+        </div>
+
+        <!--header-->
+        <div class="banner">
+            <div class="banner_contents">
+                <h1 class="banner_title">Kung Fu Panda</h1>
+                <div class="banner_buttons">
+                    <button class="banner_button">Play</button>
+                    <button class="banner_button">My List</button>
+                </div>
+                <div class="banner_describe">
+                    Kung Fu Panda is a 2008 American computer-animated martial arts comedy film produced by DreamWorks Animation and distributed by Paramount Pictures.
+                </div>
+            </div>
+            <div class="banner_fade"></div>
+        </div>
+
+        <!--Originals-->
+        <div class="row">
+            <h2>Netflix Origials</h2>
+            <div class="row_posters">
+                <img src="tr(1).jpeg" alt="" class="row_poster row_posters_large"/>
+                <img src="images.jpeg" alt="" class="row_poster row_posters_large"/>
+                <img src="tr(2).jpeg" alt="" class="row_poster row_posters_large"/>
+                <img src="enola(2).jpeg" alt="" class="row_poster row_posters_large"/>
+                <img src="bardofBlood.jpeg" alt="" class="row_poster row_posters_large"/>
+                <img src="greatGatsby.jpeg" alt="" class="row_poster row_posters_large"/>
+                <img src="bulbul.jpeg" alt="" class="row_poster row_posters_large"/>
+                <img src="365Days(3).jpeg" alt="" class="row_poster row_posters_large"/>
+            </div>
+        </div>
+
+        <!--Trendings-->
+        <div class="row">
+            <h2>Trending Now</h2>
+            <div class="row_posters">
+                <img src="50shades(1).jpeg" alt="" class="row_poster" />
+                <img src="friends.jpeg" alt="" class="row_poster" />
+                <img src="tr(2).jpeg" alt="" class="row_poster" />
+                <img src="tr(3).jpeg" alt="" class="row_poster" />
+                <img src="50shades(2).jpeg" alt="" class="row_poster" />
+                <img src="365Days(3).jpeg" alt="" class="row_poster" />
+                <img src="enola(1).jpeg" alt="" class="row_poster" />
+            </div>
+        </div>
+
+        <!--Top Rated-->
+        <div class="row">
+            <h2>Top Rated</h2>
+            <div class="row_posters">
+                <img src="img(1).jpeg" alt="" class="row_poster" />
+                <img src="img(2).jpeg" alt="" class="row_poster" />
+                <img src="img(3).jpeg" alt="" class="row_poster" />
+                <img src="img(4).jpeg" alt="" class="row_poster" />
+                <img src="img(5).jpeg" alt="" class="row_poster" />
+                <img src="img(6).jpeg" alt="" class="row_poster" />
+                <img src="img(7).jpeg" alt="" class="row_poster" />
+            </div>
+        </div>
+
+        <!--Comedy-->
+        <div class="row">
+            <h2>Comedy</h2>
+            <div class="row_posters">
+                <img src="friends.jpeg" alt="" class="row_poster" />
+                <img src="com(1).jpeg" alt="" class="row_poster" />
+                <img src="com(6).jpeg" alt="" class="row_poster" />
+                <img src="com(2).jpeg" alt="" class="row_poster" />
+                <img src="com(3).jpeg" alt="" class="row_poster" />
+                <img src="com(4).jpeg" alt="" class="row_poster" />
+                <img src="com(5).jpeg" alt="" class="row_poster" />
+            </div>
+        </div>
+
+        <!--Action-->
+        <div class="row">
+            <h2>Action</h2>
+            <div class="row_posters">
+                <img src="image(1).jpeg" alt="" class="row_poster" />
+                <img src="image(2).jpeg" alt="" class="row_poster" />
+                <img src="image(3).jpeg" alt="" class="row_poster" />
+                <img src="image(4).jpeg" alt="" class="row_poster" />
+                <img src="image(5).jpeg" alt="" class="row_poster" />
+                <img src="image(6).jpeg" alt="" class="row_poster" />
+                <img src="image(7).jpeg" alt="" class="row_poster" />
+            </div>
+        </div>
+
+        <!--Horror-->
+        <div class="row">
+            <h2>Horror</h2>
+            <div class="row_posters">
+                <img src="horror(1).jpeg" alt="" class="row_poster" />
+                <img src="horror(2).jpeg" alt="" class="row_poster" />
+                <img src="horror(3).jpeg" alt="" class="row_poster" />
+                <img src="horror(4).jpeg" alt="" class="row_poster" />
+                <img src="horror(5).jpeg" alt="" class="row_poster" />
+                <img src="horror(6).jpeg" alt="" class="row_poster" />
+                <img src="horror(7).jpeg" alt="" class="row_poster" />
+            </div>
+        </div>
+
+        <script>
+            const nav = document.getElementById('nav');
+
+            window.addEventListener('scroll', () => {
+                if(window.scrollY >= 100){
+                    nav.classList.add('nav_black');
+                }else{
+                    nav.classList.remove('nav_black');
+                }
+            });
+        </script>
+    </body>
+</html>
